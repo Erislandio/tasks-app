@@ -1,0 +1,95 @@
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form > form {
+  max-width: 400px;
+  width: 100%;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 2px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding: 62px 60px 32px 60px;
+}
+
+.form form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.form h1 {
+  width: 100%;
+  display: block;
+  font-size: 39px;
+  color: #555;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+}
+
+.form form input {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.2;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  background: 0 0;
+  height: 45px;
+  padding: 0 20px;
+  border: 1px solid #dedede;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.form .link {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: #333;
+}
+
+.form button:hover {
+  background: #a64bf4;
+  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+}
+
+@media screen and (max-width: 767px) {
+  .form > form {
+    background-color: transparent;
+    padding: 35px 20px 32px;
+  }
+
+  .form > form h1 {
+    color: #fff;
+  }
+
+  .form > form input::placeholder,
+  .form > form input {
+    color: #fff;
+  }
+
+  .form a {
+    color: #fff;
+  }
+}
