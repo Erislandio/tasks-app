@@ -12,9 +12,11 @@ import Cookies from "js-cookie";
 import { Dashboard } from "./dashboard/Dashboard";
 
 const App = () => {
+  const user = JSON.parse(Cookies.get("user"))
+
   return (
     <Router>
-      {Cookies.get("user") && <Redirect to="/dashboard" />}
+      {user && <Redirect to="/dashboard" />}
       <ToastProvider>
         <Switch>
           <Route path="/login">
@@ -24,7 +26,7 @@ const App = () => {
             <SignIn />
           </Route>
           <Route path="/dashboard">
-            <Dashboard />
+            <Dashboard user={user} />
           </Route>
         </Switch>
       </ToastProvider>
