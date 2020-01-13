@@ -1,0 +1,28 @@
+header {
+  background: #f9fbfd;
+}
+
+.navbar-header {
+  border-bottom: 1px solid #edf2f9;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-header > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header > div svg {
+  margin-right: 20px;
+}
+
+.navbar-header div img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.navbar-header .user-container {
+  cursor: pointer;
+}

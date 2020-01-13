@@ -1,21 +1,16 @@
 import React from "react";
 import { Container } from "../styles/styles";
-import { MdDashboard } from "react-icons/md";
+import { Header } from "../header/Header";
+
+export const UserContext = React.createContext();
 
 export const Dashboard = React.memo(({ user }) => {
   console.log(user);
 
   return (
-    <div>
-      <header>
-        <div>
-          <span>
-            <MdDashboard />
-          </span>
-          Dash
-        </div>
-      </header>
+    <UserContext.Provider value={user}>
+      <Header user={user.user} />
       <Container></Container>
-    </div>
+    </UserContext.Provider>
   );
 });

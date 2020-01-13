@@ -34,7 +34,7 @@ export const Login = () => {
           });
 
           cookie.then(() => {
-            window.location.href = "/account";
+            window.location.href = "/dashboard";
           });
         }
       })
